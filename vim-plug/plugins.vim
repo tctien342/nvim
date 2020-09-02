@@ -35,7 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'unblevable/quick-scope'
     " Add some color
     Plug 'norcalli/nvim-colorizer.lua'
-    Plug 'luochen1990/rainbow'
+    " Plug 'luochen1990/rainbow'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " Cool Icons
@@ -47,6 +47,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Themes
     Plug 'christianchiarulli/onedark.vim'
     Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+    Plug 'ayu-theme/ayu-vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
