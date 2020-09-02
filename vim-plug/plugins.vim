@@ -143,6 +143,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'preservim/nerdcommenter'
     " Plug 'brooth/far.vim'
     " Plug 'atishay/far.vim'
+    Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+    "------------------------ VIM TSX ------------------------
+    " by default, if you open tsx file, neovim does not show syntax colors
+    " vim-tsx will do all the coloring for jsx in the .tsx file
+    Plug 'ianks/vim-tsx'
+    "------------------------ VIM TSX ------------------------
+    " by default, if you open tsx file, neovim does not show syntax colors
+    " typescript-vim will do all the coloring for typescript keywords
+    Plug 'leafgarland/typescript-vim'
   endif
 
 call plug#end()

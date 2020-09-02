@@ -27,6 +27,7 @@
     \ 'coc-marketplace',
     \ 'coc-tabnine',
     \ 'coc-highlight',
+    \ 'coc-tslint-plugin'
     \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.

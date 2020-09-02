@@ -42,7 +42,11 @@ set guifont=Fira\ Code\ Nerd\ Font
 
 " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" when running at every change you may want to disable quickfix
+let g:prettier#quickfix_enabled = 0
 
+let g:prettier#autoformat = 0
+autocmd BufWritePre,TextChanged,InsertLeave *.js,*.json,*.css,*.scss,*.less,*.graphql,*.ts,*.tsx PrettierAsync
 " You can't stop me
 cmap w!! w !sudo tee %
 
